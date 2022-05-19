@@ -1,0 +1,20 @@
+[package]
+name = "fixed-point-macros"
+description = "Macros for fixed-point package"
+version = "1.0.0"
+authors = ["qiuchengxuan <qiuchengxuan@gmail.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/qiuchengxuan/fixed-point"
+
+[lib]
+name = "macros"
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0"
+quote = "1.0"
+syn = "1.0"
+
+[dev-dependencies]
+fixed-point = { path = ".." }

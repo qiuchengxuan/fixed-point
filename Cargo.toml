@@ -1,0 +1,24 @@
+[workspace]
+members = ["macros"]
+default-members = [".", "macros"]
+
+[package]
+name = "fixed-point"
+description = "Fixed point numbers"
+version = "1.0.2"
+authors = ["qiuchengxuan <qiuchengxuan@gmail.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/qiuchengxuan/fixed-point"
+
+[dependencies]
+fixed-point-macros = "1.0"
+num-traits = { version = "0.2", default-features = false }
+serde = { version = "1.0", default-features = false, features = ["derive"], optional = true }
+
+[features]
+std = []
+default = ["std"]
+
+[lib]
+name = "fixed_point"
